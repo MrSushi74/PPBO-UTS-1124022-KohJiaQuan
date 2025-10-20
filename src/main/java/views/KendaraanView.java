@@ -4,7 +4,6 @@ import controllers.KendaraanController;
 import models.BahanBakar;
 import models.Kendaraan;
 import utils.CLIUtils;
-import views.Object3DComparator;
 import java.util.List;
 
 public class KendaraanView {
@@ -47,7 +46,7 @@ public class KendaraanView {
     }
 
     private void handleTambahKendaraan() {
-        String tipe = CLIUtils.askForString("Masukkan Tipe kendaraan: (mobil/truk/helikopter/pesawat");
+        String tipe = CLIUtils.askForString("Masukkan Tipe kendaraan: (mobil/truk/helikopter/pesawat)");
         switch (tipe) {
             case "mobil":
                 String namaMobil = CLIUtils.askForString("Input Nama Mobil");
